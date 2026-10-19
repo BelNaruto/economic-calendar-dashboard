@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Economic Calendar This Week — FOMC, CPI &amp; NFP Dates, Forex News Today</title>
+<meta name="description" content="Free economic calendar dashboard: today's and this week's high-impact events, countdown to the next FOMC meeting, CPI release and Nonfarm Payrolls, actual vs forecast, in your local time zone.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">📊 <b>Economic Calendar</b> <span class="muted">this week</span></div>
+  <div class="meta" id="meta">Loading…</div>
+</header>
+
+<section class="countdowns" id="countdowns" aria-label="Next big releases"></section>
+
+<section class="toolbar">
+  <div class="chips" id="impact">
+    <button data-imp="high" class="chip on">🔴 High</button>
+    <button data-imp="medium" class="chip on">🟠 Medium</button>
+    <button data-imp="low" class="chip">🟡 Low</button>
+    <button data-imp="holiday" class="chip on">🏖 Holidays</button>
+  </div>
+  <div class="chips" id="countries"></div>
+  <div class="right">
+    <input id="q" type="search" placeholder="Search: CPI, payrolls, Lagarde…">
+    <select id="range">
+      <option value="today">Today</option>
+      <option value="week" selected>This week</option>
+      <option value="next">Next week</option>
+      <option value="all">All loaded</option>
+    </select>
+    <button id="csv" class="btn">⬇ CSV</button>
+  </div>
+</section>
+
+<main id="days"></main>
+
+<footer>
+  Times shown in <b id="tzname"></b>. Data: Investing.com economic calendar via the
+  <a href="https://apify.com/pintostudio/economic-calendar-data-investing-com" target="_blank" rel="noopener">Economic Calendar Data (Investing.com) Apify Actor</a>.
+  Not investment advice. · <a href="https://github.com/BelNaruto/economic-calendar-dashboard">Source on GitHub</a>
+</footer>
+<script src="app.js"></script>
+</body>
+</html>
