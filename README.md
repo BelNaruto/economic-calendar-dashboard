@@ -9,6 +9,8 @@ A fast, free **economic calendar web app** you can host on GitHub Pages in minut
 - **When is the next CPI release? When is NFP?**
 - **ECB / BoE rate decision dates**, actual vs forecast, beat or miss
 
+**🔗 Live demo: https://belnaruto.github.io/economic-calendar-dashboard/**
+
 Data comes from the Investing.com economic calendar via the **[Economic Calendar Data (Investing.com) Apify Actor](https://apify.com/pintostudio/economic-calendar-data-investing-com)**, refreshed hourly by GitHub Actions.
 
 <p align="center"><img src="docs/images/dashboard-week.png" alt="Economic calendar this week: FOMC, CPI, NFP, ECB and BoE countdowns with high-impact events" width="100%"></p>
